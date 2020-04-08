@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import Cells from './Cells';
+import GameOver from './GameOver';
+import PointScore from './PointScore';
+import GameStarter from './gameStarter';
 import {START, BODY, FOOD, KEYS, COLS, ROWS, DIRS} from './const';
 import "./style.css";
 
@@ -10,7 +13,11 @@ class Game extends Component {
             board: [],
             snake: [],
             direction: null,
-            gameOver: false
+            gameOver: false,
+            speed: 2.5,
+            points: -1,
+            maxPoints: 0,
+            gameStarted: false
         };
 
         this.start = this.start.bind(this)
@@ -18,8 +25,14 @@ class Game extends Component {
         this.handleKey = this.handleKey
     }
 
-    componentDidMount() {
-        this.start()
+    // componentDidMount() {
+    //     this.start()
+    // }
+
+    gameStarted (){
+        this.setState({
+            gameStarted: true
+        })
     }
 
     start () {
@@ -29,10 +42,15 @@ class Game extends Component {
 
         board[START] = BODY;
 
+        this.gameStarted()
+
         this.setState({
             board,
             snake,
-            direction: KEYS.right
+            direction: KEYS.right,
+            gameOver: false,
+            points: -1,
+            speed: 2.5
         }, () => {
             this.frame();
         })
@@ -61,6 +79,16 @@ class Game extends Component {
             } while(board[i])
 
             board[i] = FOOD
+
+            this.setState({
+                speed: this.state.speed + 0.1,
+                points: this.state.points + 1
+            })
+            if(this.state.points > this.state.maxPoints){
+                this.setState({
+                    maxPoints: this.state.points
+                })
+            }
         }else{
             board[snake.pop()] = null;
         }
@@ -78,7 +106,7 @@ class Game extends Component {
             snake,
             direction
         }, () => {
-            setTimeout(this.frame,200)
+            setTimeout(this.frame,1000/this.state.speed)
         })
     }
 
@@ -110,10 +138,15 @@ class Game extends Component {
     render(){
         const {board} = this.state
         return(
+            <div className="game">
+            <PointScore points={this.state.points} maxPoints={this.state.maxPoints}/>
             <Cells
             handleKey={this.handleKey} 
             board={board}
             />
+            {this.state.gameOver ?<GameOver start={this.start}/> : null}
+            {this.state.gameStarted ? null : <GameStarter start={this.start}/>}
+            </div>
         )
     }
 }
