@@ -55,6 +55,8 @@
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    /* height: 12%;
+    width: 10%; */
     background-color: #85b559;
     border: 5px black solid;
 }
@@ -84,6 +86,11 @@
     font-family: 'Roboto Mono', monospace, sans-serif;
     text-transform: uppercase;
     font-weight: bold;
+}
+.gameStarter button{
+    /* display: block; */
+    width: 70px;
+    margin-top: 0;
 }
 
 .pointScore{

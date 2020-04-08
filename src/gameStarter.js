@@ -2,7 +2,7 @@ import React from 'react';
 
 const GameStarter = (props) => {
     return ( 
-        <div className="gameOver">
+        <div className="gameStarter">
             <button
             onClick={props.start}
             >Start game</button>

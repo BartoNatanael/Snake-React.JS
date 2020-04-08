@@ -15,7 +15,7 @@ class Game extends Component {
             direction: null,
             gameOver: false,
             speed: 2.5,
-            points: -1,
+            points: 0,
             maxPoints: 0,
             gameStarted: false
         };
