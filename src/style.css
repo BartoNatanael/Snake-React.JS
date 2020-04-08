@@ -126,13 +126,13 @@
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
     grid-template-areas: 
         '. . .  .  . . . . . . . . . . . . . . . . . . . . . . . . . . .'
-        '. .  s0 s0 .  . n .  .  .  .  n4 . . .  a2 a2 .  .  . k .  .  .  k0 . e e0 e0 e0 .'
+        '. .  s0 s0 .  . n .  .  .  .  n4 . . .  a2 a2 .  .  . k .  .  .  k0 . e f f f .'
         '. s  .  .  s1 . n n0 .  .  .  n4 . . a1 .  .  a3 .  . k .  .  k3 .  . e . . . .'
         '. s  .  .  .  . n n0 n1 .  .  n4 . a .  .  .  .  a4 . k .  k2 .  .  . e . . . .'
-        '. .  s2 s2 .  . n .  n1 n2 .  n4 . a .  .  .  .  a4 . k k1 .  .  .  . e e1 e1 . .'
+        '. .  s2 s2 .  . n .  n1 n2 .  n4 . a .  .  .  .  a4 . k k1 .  .  .  . e g g . .'
         '. .  .  .  s3 . n .  .  n2 n3 n4 . a a0 a0 a0 a0 a4 . k .  k4 .  .  . e . . . .'
         '. s5 .  .  s3 . n .  .  .  n3 n4 . a .  .  .  .  a4 . k .   . k5 .  . e . . . .'
-        '. .  s4 s4 .  . n .  .  .  .  n4 . a .  .  .  .  a4 . k .   . .  k6 . e e2 e2 e2 .'
+        '. .  s4 s4 .  . n .  .  .  .  n4 . a .  .  .  .  a4 . k .   . .  k6 . e h h h .'
         '. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .'
     ;
 }
@@ -171,6 +171,6 @@
 .k5{grid-area: k5}
 .k6{grid-area: k6}
 .e{grid-area: e}
-.e0{grid-area: e0}
-.e1{grid-area: e1}
-.e2{grid-area: e2}
+.e0{grid-area: f}
+.e1{grid-area: g}
+.e2{grid-area: h}
