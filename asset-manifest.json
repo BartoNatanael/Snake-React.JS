@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Snake-React.JS/static/css/main.1c9802d3.chunk.css",
-    "main.js": "/Snake-React.JS/static/js/main.09ac5036.chunk.js",
-    "main.js.map": "/Snake-React.JS/static/js/main.09ac5036.chunk.js.map",
+    "main.css": "/Snake-React.JS/static/css/main.e9abd194.chunk.css",
+    "main.js": "/Snake-React.JS/static/js/main.d6e2bc65.chunk.js",
+    "main.js.map": "/Snake-React.JS/static/js/main.d6e2bc65.chunk.js.map",
     "runtime-main.js": "/Snake-React.JS/static/js/runtime-main.f68a9c5d.js",
     "runtime-main.js.map": "/Snake-React.JS/static/js/runtime-main.f68a9c5d.js.map",
     "static/js/2.0dbd589f.chunk.js": "/Snake-React.JS/static/js/2.0dbd589f.chunk.js",
     "static/js/2.0dbd589f.chunk.js.map": "/Snake-React.JS/static/js/2.0dbd589f.chunk.js.map",
     "index.html": "/Snake-React.JS/index.html",
-    "precache-manifest.63c858bb4ccdcc7d4c18424e1fcfa84d.js": "/Snake-React.JS/precache-manifest.63c858bb4ccdcc7d4c18424e1fcfa84d.js",
+    "precache-manifest.f292b71b48d0428acea5e07fd375763e.js": "/Snake-React.JS/precache-manifest.f292b71b48d0428acea5e07fd375763e.js",
     "service-worker.js": "/Snake-React.JS/service-worker.js",
-    "static/css/main.1c9802d3.chunk.css.map": "/Snake-React.JS/static/css/main.1c9802d3.chunk.css.map",
+    "static/css/main.e9abd194.chunk.css.map": "/Snake-React.JS/static/css/main.e9abd194.chunk.css.map",
     "static/js/2.0dbd589f.chunk.js.LICENSE.txt": "/Snake-React.JS/static/js/2.0dbd589f.chunk.js.LICENSE.txt",
     "static/media/style.css": "/Snake-React.JS/static/media/back.4edc3cb9.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.f68a9c5d.js",
     "static/js/2.0dbd589f.chunk.js",
-    "static/css/main.1c9802d3.chunk.css",
-    "static/js/main.09ac5036.chunk.js"
+    "static/css/main.e9abd194.chunk.css",
+    "static/js/main.d6e2bc65.chunk.js"
   ]
 }
